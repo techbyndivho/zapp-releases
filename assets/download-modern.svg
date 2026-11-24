@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" width="880" height="220" role="img" aria-label="Download Zapp for most phones">
+  <defs>
+    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A9BFF"/>
+      <stop offset="0.55" stop-color="#2481E8"/>
+      <stop offset="1" stop-color="#0D4B9E"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.28"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-30%" width="120%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0D4B9E" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="pill"><rect x="20" y="20" width="840" height="160" rx="80"/></clipPath>
+  </defs>
+
+  <!-- soft halo that breathes, so the eye lands here first -->
+  <rect x="20" y="20" width="840" height="160" rx="80" fill="none" stroke="#3A9BFF" stroke-width="4" opacity="0.5">
+    <animate attributeName="stroke-width" values="2;14;2" dur="2.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.55;0;0.55" dur="2.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <g filter="url(#shadow)">
+    <rect x="20" y="20" width="840" height="160" rx="80" fill="url(#fill)"/>
+  </g>
+  <g clip-path="url(#pill)">
+    <rect x="20" y="20" width="840" height="160" fill="url(#gloss)"/>
+    <rect x="-260" y="0" width="220" height="220" fill="url(#shine)" transform="skewX(-20)">
+      <animate attributeName="x" values="-260;1160;1160" keyTimes="0;0.55;1" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- icon disc with a download arrow that nudges down -->
+  <circle cx="110" cy="100" r="58" fill="#fff" fill-opacity="0.18"/>
+  <circle cx="110" cy="100" r="58" fill="none" stroke="#fff" stroke-opacity="0.35" stroke-width="2"/>
+  <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 -4;0 6;0 -4" dur="1.6s" repeatCount="indefinite"/>
+      <path d="M110 66 V114"/>
+      <path d="M90 96 L110 116 L130 96"/>
+    </g>
+    <path d="M84 134 H136"/>
+  </g>
+
+  <text x="200" y="98" fill="#fff" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="-1">Most phones</text>
+  <text x="202" y="142" fill="#fff" fill-opacity="0.88" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="27" font-weight="500">Phones from the last few years</text>
+
+  <!-- chevron on the right -->
+  <path d="M790 76 L814 100 L790 124" fill="none" stroke="#fff" stroke-opacity="0.9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;8 0;0 0" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+</svg>
