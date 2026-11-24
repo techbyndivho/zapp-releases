@@ -12,7 +12,7 @@
 
 <br><br>
 
-<img src="https://img.shields.io/github/v/release/techbyndivho/zapp-releases?label=version&color=2481E8&style=flat-square" alt="Latest version">
+<img src="https://img.shields.io/badge/version-2.4.0-2481E8?style=flat-square" alt="Latest version">
 <img src="https://img.shields.io/badge/Android-6.0%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android 6.0 and newer">
 <img src="https://img.shields.io/badge/updates-inside%20the%20app-0D4B9E?style=flat-square" alt="Updates inside the app">
 
